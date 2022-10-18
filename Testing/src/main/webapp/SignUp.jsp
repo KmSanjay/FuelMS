@@ -38,8 +38,8 @@
 				class="uil uil-envelope icon"></i>
 		</div>
 		<div class="input-field">
-			<input type="text" placeholder="Contact Number"  name="number"> <i
-				class="fa fa-mobile-phone"></i>
+			<input type="number" placeholder="Contact Number"  name="number"> <!-- <i
+				class="fa fa-mobile-phone"></i> -->
           </div>
 			<div class="input-field button">
 				<!-- <input type="button" value="Signup"> -->
@@ -64,9 +64,10 @@
 			var lname = document.myform.lname.value;
  			var email = document.myform.email.value;  
 			var emailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ ;  
- 			 var number1 = document.myform.number.value; 
+ 			 var number = document.myform.number.value; 
 			/*  var regx= (\+91)?(-)?\s*?(91)?\s*?([6-9]{1}\d{2})-?\s*?(\d{3})-?\s*?(\d{4}) ;    */  
-			 var phoneregx= ((\+*)((0[ -]+)*|(91 )*)(\d{12}+|\d{10}+))|\d{5}([- ]*)\d{6} ; 
+			/*  var phoneregx= ((\+*)((0[ -]+)*|(91 )*)(\d{12}+|\d{10}+))|\d{5}([- ]*)\d{6} ;  */
+			var phoneregx= /^[6-9]\d{9}$/gi;
 			 
 			if (fname == null || fname == "") {
 				alert("First Name can not be blank");
@@ -88,14 +89,14 @@
 		    	return false;
 			  } 
 			 
-		else	 if(number1==null || number1==""){
+ 		else	 if (number==null || number==""){
 				alert("Contact Field can not be null");
 				return false;
 			  }
-		else	   if (!number1.value.match(phoneregx)){
+		else	   if (!number.value.match(phoneregx)){
 					alert("Enter a valid Phone Number");
 					return false; 
-			}   
+			}    
 
 		}
 	</script>
