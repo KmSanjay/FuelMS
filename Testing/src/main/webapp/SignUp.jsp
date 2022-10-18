@@ -38,8 +38,8 @@
 				class="uil uil-envelope icon"></i>
 		</div>
 		<div class="input-field">
-			<input type="number" placeholder="Contact Number"  name="number"> <!-- <i
-				class="fa fa-mobile-phone"></i> -->
+			<input type="number" placeholder="Contact Number"  name="number"> <i
+				class="fa fa-mobile-phone"></i>
           </div>
 			<div class="input-field button">
 				<!-- <input type="button" value="Signup"> -->
