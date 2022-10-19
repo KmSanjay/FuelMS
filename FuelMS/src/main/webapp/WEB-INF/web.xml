@@ -41,6 +41,12 @@
   	<description></description>
   	<servlet-class>com.inventory.web.EmailSendingController</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>RegisterController</servlet-name>
+  	<display-name>RegisterController</display-name>
+  	<description></description>
+  	<servlet-class>com.inventory.controller.RegisterController</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>PostRegistationController</servlet-name>
   	<url-pattern>/postSignUp</url-pattern>
@@ -52,6 +58,10 @@
   <servlet-mapping>
   	<servlet-name>EmailSendingController</servlet-name>
   	<url-pattern>/sendEmail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegisterController</servlet-name>
+  	<url-pattern>/postRegister</url-pattern>
   </servlet-mapping>
   
 </web-app>

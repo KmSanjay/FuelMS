@@ -1,4 +1,4 @@
-package com.inventory.web;
+package com.inventory.controller;
 
 import jakarta.servlet.http.HttpServlet;
 
